@@ -1,0 +1,148 @@
+1
+00:00:00,000 --> 00:00:02,000
+BREAKING NEWS!
+
+2
+00:00:02,000 --> 00:00:08,000
+A local developer forgets how to iterate over a list in Java after five years of experience as a Java backend developer.
+
+3
+00:00:08,000 --> 00:00:15,000
+Witnesses say they were last seen frantically Googling how to increment an iterator in Java before vanishing into the abyss of Stack Overflow.
+
+4
+00:00:15,000 --> 00:00:22,000
+If you've ever felt like an absolute fraud despite, you know, actually writing code that works, congratulations, you have imposter syndrome.
+
+5
+00:00:22,000 --> 00:00:25,000
+And guess what? Every real developer has it.
+
+6
+00:00:25,000 --> 00:00:31,000
+If you don't wake up at least once a week thinking, wait, do I actually know how to code or have I just been faking it really well?
+
+7
+00:00:31,000 --> 00:00:32,000
+You're a phony!
+
+8
+00:00:32,000 --> 00:00:36,000
+Then you, my friend, are either a liar or an AI-generated LinkedIn guru.
+
+9
+00:00:36,000 --> 00:00:39,000
+Here's the thing, nobody actually knows what they're doing.
+
+10
+00:00:39,000 --> 00:00:41,000
+You think senior devs just know how everything works?
+
+11
+00:00:41,000 --> 00:00:45,000
+Nah, they're just better at Googling it without looking like they're Googling it.
+
+12
+00:00:45,000 --> 00:00:50,000
+Trust me, the same people who write billion dollar infrastructure still have to Google how to exit Vim.
+
+13
+00:00:50,000 --> 00:00:52,000
+And don't even get me started on centering a div.
+
+14
+00:00:52,000 --> 00:00:57,000
+Some of the smartest engineers in the world are out here losing battles to CSS like it's an Elden Ring boss fight.
+
+15
+00:00:57,000 --> 00:01:01,000
+Meanwhile, Chad from your boot camp is already pitching his AI-powered crypto startup.
+
+16
+00:01:01,000 --> 00:01:04,000
+Imposter syndrome is just part of being a developer.
+
+17
+00:01:04,000 --> 00:01:11,000
+A 2020 study found that over 58% of software engineers admit to feeling like frauds at some point in their careers.
+
+18
+00:01:11,000 --> 00:01:15,000
+The other, 42%, probably too scared to admit it.
+
+19
+00:01:15,000 --> 00:01:21,000
+Even Guido Van Rossum, the guy who literally invented Python, once said he doesn't always feel like he knows what he's doing.
+
+20
+00:01:21,000 --> 00:01:28,000
+So yeah, if the creator of an entire programming language feels like an imposter sometimes, you are definitely allowed to panic over a missing semicolon.
+
+21
+00:01:28,000 --> 00:01:33,000
+But here's the truth no one tells you. Tech moves too fast for anyone to actually keep up.
+
+22
+00:01:33,000 --> 00:01:37,000
+One day, you're a React expert. The next day, React announces React Quantum.
+
+23
+00:01:37,000 --> 00:01:40,000
+And suddenly you need to unlearn everything you've ever known.
+
+24
+00:01:40,000 --> 00:01:44,000
+JavaScript frameworks evolve faster than your ability to understand them.
+
+25
+00:01:44,000 --> 00:01:47,000
+The moment you finally get comfortable, boom. New release.
+
+26
+00:01:47,000 --> 00:01:54,000
+Everything's deprecated. And now you have to watch another 12-hour tutorial on YouTube just to feel like a functional human being again.
+
+27
+00:01:54,000 --> 00:01:58,000
+So if you ever feel like you don't know enough, remember, neither does anyone else.
+
+28
+00:01:58,000 --> 00:02:04,000
+The only difference between a junior and a senior dev, seniors are just better at hiding their Google searches.
+
+29
+00:02:04,000 --> 00:02:10,000
+You think that guy in the corner debugging a massive enterprise application isn't copy-pasting Stack Overflow solutions with his whole chest?
+
+30
+00:02:10,000 --> 00:02:19,000
+Think again. If you can write code, break code, then frantically search for why your code is broken, congratulations, you're a real developer.
+
+31
+00:02:19,000 --> 00:02:24,000
+And finally, if all else fails, just remember, you're only a fraud if you get caught.
+
+32
+00:02:24,000 --> 00:02:27,000
+Now excuse me while I google how to write a for loop again.
+
+33
+00:02:27,000 --> 00:02:31,879
+And don't forget to like and subscribe, or you will instantly forget how to center a div.
+
+34
+00:02:34,000 --> 00:02:46,000
+So, let me hold on for you, I don't know the feeling and the failure of the whole player side.
+
+35
+00:02:46,000 --> 00:02:53,000
+As soon as someone requests a little bit from the chemo, you'll notice, you will now have to wait and see.
+
+36
+00:02:53,000 --> 00:02:57,000
+There'll be a full section of YouTube through each of your career.
+
+37
+00:02:57,000 --> 00:02:59,000
+Ah!
+
