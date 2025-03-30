@@ -33,3 +33,4 @@ def generate_subs(filename: str):
     save_srt(segments, srt_path)
 
     print("✅ SRT file saved with precise timestamps as", srt_path)
+

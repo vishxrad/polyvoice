@@ -3,7 +3,10 @@ from flask import Flask, request, jsonify, Response, send_from_directory
 from flask_cors import CORS
 from original_subs import generate_subs  # Importing generate_subs function
 from embed_subtitles import embeded_sub
+from create_chunks import chunk_original_video
 import sys
+
+
 print("Starting application...")
 print(f"Python version: {sys.version}")
 print(f"Current working directory: {os.getcwd()}")
@@ -33,6 +36,8 @@ def upload_video():
             print("Calling generate_subs...")
             generate_subs("uploaded_video.mp4")
             print("generate_subs completed successfully!")
+            chunk_original_video()
+            print("generated chunks successfully!")
         except Exception as e:
             print(f"Error in generate_subs: {str(e)}")
             import traceback

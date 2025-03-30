@@ -1,0 +1,240 @@
+1
+00:00:00,000 --> 00:00:04,799
+Allow me to introduce you to Itana. She's an Instagram model from Barcelona who's been going viral,
+
+2
+00:00:04,799 --> 00:00:08,800
+but she's also just like totally chilling down to earth. She's into fitness and video games,
+
+3
+00:00:08,800 --> 00:00:12,480
+and yeah, if you're wondering, she does have additional photos on our subscription tier,
+
+4
+00:00:12,480 --> 00:00:16,240
+which brings in about 10 grand per month. Before you sign up though, there's one thing I need to
+
+5
+00:00:16,240 --> 00:00:19,920
+disclose, and it really shouldn't matter unless you're some kind of bigot technophobic Nazi,
+
+6
+00:00:19,920 --> 00:00:25,199
+but she's not a biological female. She is a woman, but entirely artificial. It is November 29th,
+
+7
+00:00:25,199 --> 00:00:29,359
+2023, and you're watching the code report. By the end of this video, you'll know how to build
+
+8
+00:00:29,919 --> 00:00:35,359
+your own army of AI influencers, entirely for free using open source generative image models like
+
+9
+00:00:35,359 --> 00:00:40,320
+stable diffusion XL and checkpoints like juggernaut that can produce highly realistic images. The first
+
+10
+00:00:40,320 --> 00:00:44,560
+generative adversarial networks appeared about 10 years ago, and at first could only produce tiny
+
+11
+00:00:44,560 --> 00:00:49,120
+images that you could barely make out. But now anyone can produce high resolution realistic images
+
+12
+00:00:49,120 --> 00:00:54,079
+good enough to trick sad lonely men into buying the NSFW content. It's extremely sad and depressing
+
+13
+00:00:54,079 --> 00:00:58,159
+that the agency behind this thing is making a six figure income, especially during the sacred
+
+14
+00:00:58,159 --> 00:01:02,159
+month of no nut November. Content like this is rotting the brains of billions of men around the
+
+15
+00:01:02,159 --> 00:01:06,239
+world. Although they are doing a 50% off sale right now, so it does look like a pretty good value
+
+16
+00:01:06,239 --> 00:01:10,879
+actually. Luckily 95% of this channel is comprised of high value alpha males, which means we don't
+
+17
+00:01:10,879 --> 00:01:14,640
+need to consume content like that. Instead, we reverse engineer it so we can exploit it for
+
+18
+00:01:14,640 --> 00:01:19,120
+financial gain. There are many tools out there that can help you become an AI PIMP, like you might be
+
+19
+00:01:19,120 --> 00:01:24,000
+familiar with mid journey and dolly from open AI, but these are paid close source products that
+
+20
+00:01:24,000 --> 00:01:28,480
+also contain a bunch of unwanted safety layers. Luckily, there's a great open source ecosystem
+
+21
+00:01:28,480 --> 00:01:33,200
+around generative AI. The most well known base model is stable diffusion XL, which was released
+
+22
+00:01:33,200 --> 00:01:38,079
+in late July 2023. Gigantic models like this take an absurd amount of computing power, but luckily
+
+23
+00:01:38,079 --> 00:01:42,159
+it's possible to fine tune them by creating what's called a checkpoint using some additional
+
+24
+00:01:42,159 --> 00:01:45,920
+specialized training data. Now you don't have to worry about this part because people have already
+
+25
+00:01:45,920 --> 00:01:50,240
+created a bunch of different checkpoints, which you can find on websites like civet AI, some of which
+
+26
+00:01:50,239 --> 00:01:54,959
+are highly optimized for photo realism. Now the next part of the puzzle is finding a UI where we
+
+27
+00:01:54,959 --> 00:01:59,119
+can actually work with these models without having to write any code. The most well known option is
+
+28
+00:01:59,119 --> 00:02:03,439
+the stable diffusion web UI. It's an incredibly powerful tool, but might be a little overwhelming
+
+29
+00:02:03,439 --> 00:02:07,759
+for a beginner. There's just a lot of different buttons to push. Another cool option is comfy UI,
+
+30
+00:02:07,759 --> 00:02:12,159
+which has a drag and drop editor that works kind of like blender or Unreal Engine. But the one I'm
+
+31
+00:02:12,159 --> 00:02:17,039
+using in this video is focus or focus, and I'll explain why I like it in just a minute. You'll
+
+32
+00:02:17,039 --> 00:02:21,039
+notice all these AI UIs look very similar, and that's because they're based on another open
+
+33
+00:02:21,039 --> 00:02:25,359
+source project called a Gradio. And an interesting side note is that Gradio builds the front end
+
+34
+00:02:25,359 --> 00:02:29,519
+with Svelte. Pretty cool, but let's get started. Check out the install instructions, but basically
+
+35
+00:02:29,519 --> 00:02:34,239
+all you do is clone the repo, create a virtual environment for Python, and install the packages.
+
+36
+00:02:34,239 --> 00:02:38,479
+Once that's done, you run this Python script, which will then automatically download the default
+
+37
+00:02:38,479 --> 00:02:42,639
+models in the background. These files are multiple gigabytes large, so it may take a while. The base
+
+38
+00:02:42,639 --> 00:02:47,119
+model is Juggernaut XL, which is based on stable diffusion and works pretty well for realistic
+
+39
+00:02:47,119 --> 00:02:51,279
+images. You now have the power at your fingertips to prompt out any image you can imagine. The thing
+
+40
+00:02:51,279 --> 00:02:55,679
+I like about focus is that in many ways it feels similar to mid-journey, but it's free and the UI
+
+41
+00:02:55,679 --> 00:03:00,479
+is way more intuitive. I'm running it with a modest NVIDIA 3070, and it usually takes about 45
+
+42
+00:03:00,479 --> 00:03:04,239
+seconds to generate two quality images. What's really cool though is that if you click on the
+
+43
+00:03:04,239 --> 00:03:09,199
+Advanced tab, you'll get options for performance, aspect ratio, and the number of images. But there's
+
+44
+00:03:09,199 --> 00:03:13,919
+also a tab for style, and we can mix and match these different styles to get far different results,
+
+45
+00:03:13,919 --> 00:03:18,959
+like this retro video game style, or maybe an anime style. But in order to generate our AI influencer,
+
+46
+00:03:18,959 --> 00:03:22,879
+I'm going to go with the default settings along with focus, photograph, create a prompt that's
+
+47
+00:03:22,879 --> 00:03:28,319
+highly specific, and add some imperfections like rough skin, no makeup, etc. to make it more realistic.
+
+48
+00:03:28,319 --> 00:03:32,319
+And now our influencer is born. Now let's go ahead and save this as our base image, then create a
+
+49
+00:03:32,319 --> 00:03:37,519
+new prompt and check the box for input image. Drop the base image here to blend multiple images
+
+50
+00:03:37,520 --> 00:03:41,680
+and text together. Now click on the advanced box below the image to fine-tune the way the image is
+
+51
+00:03:41,680 --> 00:03:45,760
+blended. In this case we'll go with face swap and then write a text prompt of doing yoga at the
+
+52
+00:03:45,760 --> 00:03:50,080
+beach, giving us that perfect shot for the gram. But most importantly, we have pretty good continuity
+
+53
+00:03:50,080 --> 00:03:54,320
+between the faces, and the hands almost look totally realistic. But when you have imperfections,
+
+54
+00:03:54,320 --> 00:03:58,960
+you can go back to the image prompt, but this time go to in-paint or out-paint, and then paint across
+
+55
+00:03:58,960 --> 00:04:02,640
+the parts that are messed up. Tell it what you want to fix, then it will regenerate those parts of
+
+56
+00:04:02,639 --> 00:04:08,239
+the image. Congratulations, you just built your own artificial influencer. You did it! But photos
+
+57
+00:04:08,239 --> 00:04:12,879
+are only the beginning. Yesterday, Pika Labs released an insane video demoing their text-to-video
+
+58
+00:04:12,879 --> 00:04:17,919
+platform. It's closed source, but luckily stability AI just introduced stable diffusion video last week,
+
+59
+00:04:17,919 --> 00:04:21,360
+and I can only imagine what kind of depraved content you guys will use that for. This has
+
+60
+00:04:21,360 --> 00:04:24,719
+been The Code Report, thanks for watching, and I will see you in the next one.
+
