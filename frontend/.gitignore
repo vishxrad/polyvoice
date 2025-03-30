@@ -12,6 +12,8 @@ dist
 dist-ssr
 *.local
 venv
+.ven
+__pycache__
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
