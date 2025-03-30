@@ -1,0 +1,132 @@
+1
+00:00:00,000 --> 00:00:01,840
+Voici comment je me prépare à mon entretien de programmation.
+
+2
+00:00:01,840 --> 00:00:04,719
+Je résolve 1 513 problèmes de fuite de code.
+
+3
+00:00:04,719 --> 00:00:06,160
+Mettez toutes les réponses par cœur.
+
+4
+00:00:06,160 --> 00:00:08,320
+J'ai lu le code cinq fois.
+
+5
+00:00:08,320 --> 00:00:11,279
+Lisez les éléments de l'interview en trois langues.
+
+6
+00:00:11,279 --> 00:00:13,519
+Python, C et espagnol.
+
+7
+00:00:13,519 --> 00:00:15,359
+Une carte de hash, une mère.
+
+8
+00:00:15,359 --> 00:00:17,359
+Lisez l'interview de conception des systèmes.
+
+9
+00:00:17,359 --> 00:00:19,679
+Je ne comprends rien, mais mémorise chaque mot clé.
+
+10
+00:00:19,679 --> 00:00:21,920
+Déchiffrer, mettre en cache, équilibrer la charge.
+
+11
+00:00:21,920 --> 00:00:23,199
+Je suis si intelligent.
+
+12
+00:00:23,199 --> 00:00:25,039
+Allez sur LinkedIn pour traquer mon intervieweur.
+
+13
+00:00:25,039 --> 00:00:27,039
+Vérifiez leur Facebook, leur Twitter, leur femme.
+
+14
+00:00:27,599 --> 00:00:30,480
+C'est bien.
+
+15
+00:00:30,480 --> 00:00:33,679
+Allez à la classe pour trouver les questions d'entrevue qu'ils posent.
+
+16
+00:00:33,679 --> 00:00:35,359
+Ça ne suffit pas.
+
+17
+00:00:35,359 --> 00:00:37,920
+Payer beaucoup d'argent pour accéder à un site chinois déroutant
+
+18
+00:00:37,920 --> 00:00:39,519
+pour obtenir des questions d'entrevue fuyées.
+
+19
+00:00:39,519 --> 00:00:40,240
+C'est parfait.
+
+20
+00:00:40,240 --> 00:00:42,399
+Je vais aux toilettes pour mon exercice de respiration.
+
+21
+00:00:47,759 --> 00:00:49,120
+Je veux méditer.
+
+22
+00:00:49,120 --> 00:00:50,960
+La compagnie m'appelle pour une interview.
+
+23
+00:00:50,960 --> 00:00:52,640
+Je fais le point sur mes draps.
+
+24
+00:00:52,640 --> 00:00:53,840
+C'est un jeu d'enfant.
+
+25
+00:00:53,840 --> 00:00:54,719
+Je suis prêt pour ça.
+
+26
+00:00:55,679 --> 00:00:57,519
+Merci de m'avoir répondu.
+
+27
+00:00:57,519 --> 00:00:58,000
+Vous êtes les bienvenus.
+
+28
+00:00:59,920 --> 00:01:00,479
+Je suis désolé.
+
+29
+00:01:01,280 --> 00:01:02,799
+Je suis donc votre intervieweur.
+
+30
+00:01:02,799 --> 00:01:04,879
+Et oui, la première question est:
+
+31
+00:01:04,879 --> 00:01:07,359
+Que feriez-vous si vous aviez un conflit avec votre manager ?
+
+32
+00:01:07,359 --> 00:01:07,920
+- Je suis un hashmate.
+
+33
+00:01:07,920 --> 00:01:08,799
+Je vais utiliser le haschmat.
+

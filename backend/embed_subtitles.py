@@ -61,4 +61,3 @@ def embeded_sub():
         import traceback
         traceback.print_exc()
 
-embeded_sub()

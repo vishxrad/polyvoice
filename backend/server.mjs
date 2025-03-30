@@ -74,6 +74,21 @@ io.on("connection", (socket) => {
           if (err) console.error("Error deleting 'static/processed_video' folder:", err);
           else console.log("'static/processed_video' folder deleted successfully!");
         });
+
+        fs.rm("static/combined_chunks", { recursive: true, force: true }, (err) => {
+          if (err) console.error("Error deleting 'static/processed_video' folder:", err);
+          else console.log("'static/processed_video' folder deleted successfully!");
+        });
+
+        fs.rm("static/audio_chunks", { recursive: true, force: true }, (err) => {
+          if (err) console.error("Error deleting 'static/processed_video' folder:", err);
+          else console.log("'static/processed_video' folder deleted successfully!");
+        });
+
+        fs.rm("static/chunks", { recursive: true, force: true }, (err) => {
+          if (err) console.error("Error deleting 'static/processed_video' folder:", err);
+          else console.log("'static/processed_video' folder deleted successfully!");
+        });
       }
     }, 500); // Small delay to avoid race conditions
   });
