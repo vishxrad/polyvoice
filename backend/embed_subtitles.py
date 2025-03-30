@@ -1,27 +1,64 @@
 import subprocess
+import os
 
-def embed_subtitles(video_path, subtitle_path, output_path):
-    """
-    Embeds subtitles into a video using FFmpeg.
-    
-    Parameters:
-    - video_path (str): Path to the input video file.
-    - subtitle_path (str): Path to the subtitle file (.srt, .ass).
-    - output_path (str): Path to save the output video.
-    - mode (str): "hard" for burned-in subtitles, "soft" for selectable subtitles.
-    """
-
-    
-    command = [
-        "ffmpeg", "-i", video_path, "-vf", f"subtitles={subtitle_path}",
-        "-c:a", "copy", output_path
-    ]
+def embeded_sub():
     try:
-        subprocess.run(command, check=True)
-        print(f"✅ Subtitles embedded successfully: {output_path}")
-    except subprocess.CalledProcessError as e:
-        print(f"❌ Error embedding subtitles: {e}")
+        print("Starting embeded_sub function...")
+        input_video = "uploads/uploaded_video.mp4"
+        input_subtitles = "uploads/uploaded_video.srt"
+        output_video = "static/processed_video/processed_video.mp4"
+        
+        print(f"Checking file paths:")
+        print(f"Input video exists: {os.path.exists(input_video)}")
+        print(f"Input subtitles exists: {os.path.exists(input_subtitles)}")
+        
+        # Check if files exist before running ffmpeg
+        if not os.path.exists(input_video):
+            print(f"Error: {input_video} not found!")
+            return
+        
+        if not os.path.exists(input_subtitles):
+            print(f"Error: {input_subtitles} not found!")
+            return
+        
+        # Try running a simple ffmpeg command first to check if ffmpeg is available
+        print("Testing ffmpeg availability...")
+        try:
+            test_cmd = ["ffmpeg", "-version"]
+            subprocess.run(test_cmd, check=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+            print("ffmpeg is available.")
+        except Exception as e:
+            print(f"ffmpeg test failed: {e}")
+            return
+        
+        # Now try the actual command
+        command = [
+            "ffmpeg", "-i", input_video,
+            "-vf", f"subtitles={input_subtitles}",
+            "-y",
+            output_video
+        ]
+        
+        print(f"Running command: {' '.join(command)}")
+        
+        result = subprocess.run(command, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True)
+        print("FFmpeg command completed with return code:", result.returncode)
+        
+        if result.stdout:
+            print("FFmpeg Output:", result.stdout)
+        
+        if result.stderr:
+            print("FFmpeg Error:", result.stderr)
+        
+        if result.returncode != 0:
+            print("FFmpeg failed!")
+        else:
+            print(f"FFmpeg succeeded. Output video should be at: {output_video}")
+            print(f"Output video exists: {os.path.exists(output_video)}")
+    
+    except Exception as e:
+        print(f"Error in embeded_sub: {e}")
+        import traceback
+        traceback.print_exc()
 
-
-
-
+embeded_sub()

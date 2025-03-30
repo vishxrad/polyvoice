@@ -1,18 +1,17 @@
 import os
-from faster_whisper import WhisperModel
+import whisper
 
 def generate_subs(filename: str):
-    upload_dir = "upload"  
-    subtitles_dir = os.path.join(upload_dir, "original_subtitles")  
-    os.makedirs(subtitles_dir, exist_ok=True)  
+    upload_dir = "uploads"  
+    os.makedirs(upload_dir, exist_ok=True)  
     
     def save_srt(segments, srt_filename):
         """ Saves the transcribed segments into an SRT file with precise timestamps. """
         with open(srt_filename, "w", encoding="utf-8") as srt_file:
             for i, segment in enumerate(segments, start=1):
-                start_time = format_time(segment.start)
-                end_time = format_time(segment.end)
-                text = segment.text.strip()
+                start_time = format_time(segment[0])
+                end_time = format_time(segment[1])
+                text = segment[2].strip()
                 srt_file.write(f"{i}\n{start_time} --> {end_time}\n{text}\n\n")
 
     def format_time(seconds):
@@ -23,16 +22,14 @@ def generate_subs(filename: str):
         milliseconds = int((seconds - int(seconds)) * 1000)
         return f"{hours:02}:{minutes:02}:{sec:02},{milliseconds:03}"
 
-    model_size = "large-v3-turbo"
-    model = WhisperModel(model_size, device="cuda", compute_type="float16")
+    model = whisper.load_model("small")
 
     video_path = os.path.join(upload_dir, filename)  
-    srt_path = os.path.join(subtitles_dir, f"{os.path.splitext(filename)[0]}.srt")
+    srt_path = os.path.join(upload_dir, f"{os.path.splitext(filename)[0]}.srt")
     
-    segments, _ = model.transcribe(video_path, beam_size=5)  
+    result = model.transcribe(video_path)
+    segments = [(seg["start"], seg["end"], seg["text"]) for seg in result["segments"]]
     
-    segments = list(segments)
-
     save_srt(segments, srt_path)
 
     print("✅ SRT file saved with precise timestamps as", srt_path)
