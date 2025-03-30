@@ -1,0 +1,8 @@
+Flask
+Flask-CORS
+moviepy
+tqdm
+decorator
+numpy
+requests
+
