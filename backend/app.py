@@ -64,7 +64,7 @@ def upload_video():
             final_conversion()
             print("now maybe?")
             # print("Calling embeded_sub...")
-            # embeded_sub()
+            embeded_sub()
             # print("embeded_sub completed successfully!")
         except Exception as e:
             print(f"Error in embeded_sub: {str(e)}")
@@ -89,9 +89,9 @@ def stream_video(role):
     def generate():
         try:
             if role == 'host':
-                video_url = f"http://localhost:5000/uploads/uploaded_video.mp4"
+                video_url = f"http://localhost:5000/uploads/uploaded_video2.mp4"
             else:
-                video_url = f"http://localhost:5000/static/processed_video/processed_video.mp4"
+                video_url = f"http://localhost:5000/static/processed_video/processed_video2.mp4"
             yield f"data: {video_url}\n\n"
         except Exception as e:
             yield f"data: error: {str(e)}\n\n"

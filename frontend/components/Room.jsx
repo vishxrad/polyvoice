@@ -263,33 +263,31 @@ const Room = () => {
         {chunks.length > 0 ? (
           <center>
             {!videoLoaded && (
-              <div
-                style={{
-                  width: "100%",
-                  maxWidth: "1200px",
-                  height: "675px", // 16:9 aspect ratio for 1200px width
-                  marginTop: "20px",
-                  borderRadius: "20px",
-                  backgroundColor: "#000",
-                  display: "flex",
-                  justifyContent: "center",
-                  alignItems: "center",
-                  flexDirection: "column",
-                }}
-              >
-                <iframe
-                  src="https://embed.lottiefiles.com/animation/108103"
-                  width="300"
-                  height="300"
-                  style={{ border: "none", pointerEvents: "none" }}
-                  title="Loading animation"
-                ></iframe>
-                <p
-                  style={{ color: "#fff", marginTop: "20px", fontSize: "18px" }}
-                >
-                  Loading video...
-                </p>
-              </div>
+             
+             <div
+             style={{
+               width: "100%",
+               maxWidth: "600px",
+               height: "400px",
+               margin: "20px auto",
+               borderRadius: "20px",
+               backgroundColor: "#222",
+               display: "flex",
+               justifyContent: "center",
+               alignItems: "center",
+               flexDirection: "column",
+             }}
+           >
+         <iframe  width="560" height="315" src="https://www.youtube.com/embed/YK9ixPwALIY?si=_6mwkBy5t3zS744w&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>            
+         <p style={{ color: "#fff", marginTop: "20px", fontSize: "18px" }}>
+               {role === "host"
+                 ? "Upload a video to get started"
+                 : "Waiting for host to upload a video"}
+             </p>
+           </div>
+               
+
+          
             )}
             <video
               ref={videoRef}
@@ -322,8 +320,8 @@ const Room = () => {
               flexDirection: "column",
             }}
           >
-            <iframe src="https://lottie.host/embed/b923bb98-fb14-4be1-8aa6-cbb35c66530d/ptYAqeXvPf.lottie"></iframe>
-            <p style={{ color: "#fff", marginTop: "20px", fontSize: "18px" }}>
+        <iframe  width="560" height="315" src="https://www.youtube.com/embed/YK9ixPwALIY?si=_6mwkBy5t3zS744w&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>            
+        <p style={{ color: "#fff", marginTop: "20px", fontSize: "18px" }}>
               {role === "host"
                 ? "Upload a video to get started"
                 : "Waiting for host to upload a video"}
