@@ -105,7 +105,7 @@ Poly Voice has significant potential for various business models:
 
 ## Presentation
 
-* **Demo Video:** [Link to Demo Video]
+* **Demo Video:** [[Link to Demo Video]](https://youtu.be/FsnVjhvz7Lg)
 * **Presentation Slides:** [Link to Presentation Slides]
 
 ## Repository Link
