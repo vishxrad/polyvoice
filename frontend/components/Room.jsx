@@ -322,16 +322,7 @@ const Room = () => {
               flexDirection: "column",
             }}
           >
-            <iframe
-              width="560"
-              height="315"
-              src="https://www.youtube-nocookie.com/embed/wLqKgAEZt2g?si=x9pzfuX8wptOAQal&amp;controls=0"
-              title="YouTube video player"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              referrerpolicy="strict-origin-when-cross-origin"
-              allowfullscreen
-            ></iframe>
+            <iframe src="https://lottie.host/embed/b923bb98-fb14-4be1-8aa6-cbb35c66530d/ptYAqeXvPf.lottie"></iframe>
             <p style={{ color: "#fff", marginTop: "20px", fontSize: "18px" }}>
               {role === "host"
                 ? "Upload a video to get started"

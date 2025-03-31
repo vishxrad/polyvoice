@@ -11,9 +11,6 @@ import {
 import { Accordion, AccordionItem } from "@heroui/react";
 
 export default function First() {
-  const defaultContent =
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.";
-
   const currentYear = new Date().getFullYear();
   const [theme, setTheme] = useState("dark");
   const [accordionWidth, setAccordionWidth] = useState("80%");
@@ -187,42 +184,53 @@ export default function First() {
                 aria-label="Accordion 1"
                 title="What is Poly Voice?"
               >
-                {defaultContent}
+                Poly Voice is an innovative, open-source platform delivering
+                synchronized, real-time subtitles, dubbing, and chat translation
+                for a global, multilingual digital media experience.
               </AccordionItem>
               <AccordionItem
                 key="2"
                 aria-label="Accordion 2"
                 title="How can I get started?"
               >
-                {defaultContent}
+                Create or join a watching room, select your preferred language
+                for subtitles or dubbing, and enjoy synchronized videos with
+                real-time multilingual chat translation.
               </AccordionItem>
               <AccordionItem
                 key="3"
                 aria-label="Accordion 3"
-                title="How do I join the community?"
+                title="Do I need to install any software to use Poly Voice?"
               >
-                {defaultContent}
+                No, Poly Voice is a web-based platform, so you can access it
+                directly from your browser without any additional software
+                installation.
               </AccordionItem>
               <AccordionItem
                 key="4"
                 aria-label="Accordion 3"
-                title="How do I join the community?"
+                title="Can I upload my own videos for translation and dubbing?"
               >
-                {defaultContent}
+                Yes, users can upload videos, and our system will process them
+                using Whisper, NLLB, and Coqui TTS for subtitles and dubbing.
               </AccordionItem>
               <AccordionItem
                 key="5"
                 aria-label="Accordion 3"
-                title="How do I join the community?"
+                title="Can I invite friends to watch videos together?"
               >
-                {defaultContent}
+                Yes! You can create a room, share the invite link, and watch
+                videos in sync with your friends, each with their preferred
+                language settings.
               </AccordionItem>
               <AccordionItem
                 key="6"
                 aria-label="Accordion 3"
-                title="How do I join the community?"
+                title="Can I use Poly Voice for educational or professional purposes?"
               >
-                {defaultContent}
+                Absolutely! Poly Voice is great for language learning, business
+                meetings, and global content sharing with real-time translation
+                and dubbing.
               </AccordionItem>
             </Accordion>
             <br />
