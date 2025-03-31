@@ -3,7 +3,14 @@ from flask import Flask, request, jsonify, Response, send_from_directory
 from flask_cors import CORS
 from original_subs import generate_subs  # Importing generate_subs function
 from embed_subtitles import embeded_sub
+from create_chunks import chunk_original_video
+from convert_to_wav import extract_audio
+from generate_audio import generate_audio
+from combine_audio_video_chunks import combine
+from combine_all_chunks import combine_all
 import sys
+
+
 print("Starting application...")
 print(f"Python version: {sys.version}")
 print(f"Current working directory: {os.getcwd()}")
@@ -32,7 +39,18 @@ def upload_video():
         try:
             print("Calling generate_subs...")
             generate_subs("uploaded_video.mp4")
+            extract_audio()
+            print("extracted audio to wav")
+            generate_audio()
             print("generate_subs completed successfully!")
+            chunk_original_video()
+            print("chunking video completed successfully!")
+            combine()
+            print("combined audio files with video")
+            
+
+
+            print("generated chunks successfully!")
         except Exception as e:
             print(f"Error in generate_subs: {str(e)}")
             import traceback
@@ -40,9 +58,11 @@ def upload_video():
             return jsonify({'error': f'Subtitle generation failed: {str(e)}'}), 500
         
         try:
-            print("Calling embeded_sub...")
-            embeded_sub()
-            print("embeded_sub completed successfully!")
+            combine_all()
+            print("done???")
+            # print("Calling embeded_sub...")
+            # embeded_sub()
+            # print("embeded_sub completed successfully!")
         except Exception as e:
             print(f"Error in embeded_sub: {str(e)}")
             import traceback
