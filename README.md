@@ -4,6 +4,9 @@
 
 Poly Voice is a platform designed to eliminate language barriers in accessing and engaging with digital media. We provide real-time, accurate subtitles and audio dubbing, enabling users to enjoy videos in their preferred languages. Our platform also facilitates seamless communication in multilingual watching rooms.
 
+## Website (yes we actually bought a domain!)
+[https://polyvoice.tech/](https://polyvoice.tech/)
+
 ## Problem Statement
 
 Accessing digital content in diverse languages is often challenging. Traditional subtitling and dubbing are time-consuming and expensive. Many online platforms lack robust multilingual support, limiting accessibility and inclusivity.
@@ -105,7 +108,7 @@ Poly Voice has significant potential for various business models:
 
 ## Presentation
 
-* **Demo Video:** [[Link to Demo Video]](https://youtu.be/FsnVjhvz7Lg)
+* **Demo Video:** [Link to Demo Video](https://youtu.be/FsnVjhvz7Lg)
 * **Presentation Slides:** [Link to Presentation Slides]
 
 ## Repository Link
