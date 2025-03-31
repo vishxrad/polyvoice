@@ -8,6 +8,7 @@ from convert_to_wav import extract_audio
 from generate_audio import generate_audio
 from combine_audio_video_chunks import combine
 from combine_all_chunks import combine_all
+from language_map_end import final_conversion
 import sys
 
 
@@ -60,6 +61,8 @@ def upload_video():
         try:
             combine_all()
             print("done???")
+            final_conversion()
+            print("now maybe?")
             # print("Calling embeded_sub...")
             # embeded_sub()
             # print("embeded_sub completed successfully!")

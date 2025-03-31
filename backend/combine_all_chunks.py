@@ -65,7 +65,7 @@ def combine_all():
 
     # Call combine_videos() with an actual folder and output file
     input_folder = "static/combined_chunks"  # Change this to your actual folder
-    output_file = "static/processed_video/processed_video.mp4"  # Change this to your desired output file name
+    output_file = "static/processed_video/not_processed_video.mp4"  # Change this to your desired output file name
     combine_videos(input_folder, output_file)
 
 combine_all()
