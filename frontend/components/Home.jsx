@@ -19,8 +19,7 @@ const Home = () => {
   const joinRoom = () => {
     navigate("/join");
   };
-  const defaultContent =
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.";
+
   const currentYear = new Date().getFullYear();
   const [theme, setTheme] = useState("dark");
 
@@ -102,9 +101,8 @@ const Home = () => {
           <br />
           <br />
           <p style={{ fontSize: "20px" }} className="text-lg text-center mb-10">
-            Discover engaging content, interactive features, and a community
-            built around sharing ideas. Watch our featured video below to learn
-            more!
+            When a user creates a room, our platform sets up a dedicated virtual
+            watching space using our Flask-based backend.
           </p>
           <br />
           <br />
@@ -141,9 +139,8 @@ const Home = () => {
           <br />
           <br />
           <p style={{ fontSize: "20px" }} className="text-lg text-center mb-10">
-            Discover engaging content, interactive features, and a community
-            built around sharing ideas. Watch our featured video below to learn
-            more!
+            Users can join any existing watching room effortlessly.They are
+            immediately connected to the synchronized playback stream
           </p>
           <br />
           <br />
