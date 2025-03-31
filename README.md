@@ -109,7 +109,7 @@ Poly Voice has significant potential for various business models:
 ## Presentation
 
 * **Demo Video:** [Link to Demo Video](https://youtu.be/FsnVjhvz7Lg)
-* **Presentation Slides:** [Link to Presentation Slides]
+* **Presentation Slides:** https://export-download.canva.com/QuAJI/DAGjRjQuAJI/10/0-5503859742281581789.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQYCGKMUH5AO7UJ26%2F20250330%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250330T134148Z&X-Amz-Expires=66735&X-Amz-Signature=36bddaa46806944350bb95a20916473bac0adcf2250f487c7edeed99e43e4162&X-Amz-SignedHeaders=host&response-content-disposition=attachment%3B%20filename%2A%3DUTF-8%27%27Copy%2520of%2520White%2520Modern%2520Clean%2520Minimalism%2520Presentation.pdf&response-expires=Mon%2C%2031%20Mar%202025%2008%3A14%3A03%20GMT
 
 ## Repository Link
 
